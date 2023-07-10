@@ -83,8 +83,16 @@ def generate_csv(gigabyte_rows, idle_ratio_columns):
 
 
 def build():
+    ##
+    ## Columns: Idle ratios
+    ##
     cols = (0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0)
+
+    ##
+    ## Rows: Gigabytes of memory provided
+    ##
     rows = (0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 6.0, 8.0, 12.0, 16.0, 24.0, 32.0, 48.0, 64.0)
+
     csv = generate_csv(rows, cols)
     print(csv)
 
